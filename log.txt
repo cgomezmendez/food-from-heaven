@@ -1,0 +1,3 @@
+2019-03-14 03:17:34.481 | ERROR    | __main__:<module>:76 - Error in function sendMessageToID (Timed out after 500000 ms). Command: return WAPI.sendMessageToID('18298679985-1551975140@g.us','Buenos dias chicos, para hoy:\nSpaghetti en salsa Alfredo con tostones.\nPorfavor recuerden llenar el formulario.\nhttps://docs.google.com/forms/d/e/1FAIpQLSc6kSPKeZNvGsRXuowis8xvDRTuaGEPDYFI9mehp3GWALLbTg/viewform\nEnviado desde un bot en pruebas, reportar cualquier error.', arguments[0])
+2019-03-14 03:18:02.056 | INFO     | __main__:<module>:7 - Starting daily dish reminder task
+2019-03-14 03:18:02.062 | INFO     | __main__:<module>:35 - Stopping daily dish reminder task - Time hasn't arrive
