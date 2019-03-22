@@ -4,10 +4,33 @@ import time
 import locale
 import datetime
 
+
+def get_menu_info():
+    return """
+    semana del 18  al
+22 de Mar. 2019.
+
+Lunes 18 Mar.
+Sin seevicios
+
+Martes 19 Mar.
+Chili con carne, arroz blanco, ensalada pico de gallo y nachos
+
+Miercoles 20 Mar.
+Arroz cin maiz, muslos de pollo al horno, ensalada y fritura.
+
+Jueves 21 Mar.
+Spaghetti en salsa Alfredo con trozos de chuletas ahumadas y tostadas con manrequilla de ajo.
+
+viernes 22 Mar.
+Chofan Mixto, Eggs roll, ensalada
+    """
+
 def get_menu():
-    session = HTMLSession()
-    response = session.get('https://docs.google.com/forms/d/e/1FAIpQLSc6kSPKeZNvGsRXuowis8xvDRTuaGEPDYFI9mehp3GWALLbTg/viewform')
-    description = response.html.find('.freebirdFormviewerViewHeaderDescription')[0].text
+    #session = HTMLSession()
+    #response = session.get('https://docs.google.com/forms/d/e/1FAIpQLSc6kSPKeZNvGsRXuowis8xvDRTuaGEPDYFI9mehp3GWALLbTg/viewform')
+    #description = response.html.find('.freebirdFormviewerViewHeaderDescription')[0].text
+    description = get_menu_info()
     dias = ['Lunes', 'Martes', 'Miercoles', 'Jueves', 'viernes']
     regex = re.compile('(\w+ [0-9]+ \w+\.)\n([^\n]+)')
     match = regex.findall(description)
@@ -16,6 +39,7 @@ def get_menu():
     for menu_item in match:
         item = parse_menu_item(menu_item)
         menu[item[0]] = item[1]
+    print(menu)
     return menu
 
 

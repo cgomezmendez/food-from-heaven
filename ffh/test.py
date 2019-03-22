@@ -6,6 +6,9 @@ from loguru import logger
 
 logger.info('Starting daily dish reminder task')
 
+
+#exit()
+
 redis_instance = redis.get_redis()
 current_date = datetime.datetime.now()
 
