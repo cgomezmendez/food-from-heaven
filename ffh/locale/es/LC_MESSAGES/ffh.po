@@ -1,0 +1,30 @@
+# Translations template for ffh.
+# Copyright (C) 2019 ORGANIZATION
+# This file is distributed under the same license as the ffh project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: ffh 1.0\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2019-03-13 19:18-0400\n"
+"PO-Revision-Date: 2019-03-13 19:21-0400\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+"X-Generator: Poedit 2.2.1\n"
+"Last-Translator: \n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Language: es\n"
+
+#: ffh/test.py:10
+msgid ""
+"Good morning, {}.\n"
+"Today we have {}.\n"
+"Would you like to order?"
+msgstr ""
+"Buenos días, {}.\n"
+"Tenemos para hoy {}.\n"
+"¿Te gustaría ordenar?"
